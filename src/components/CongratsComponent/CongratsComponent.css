@@ -1,11 +1,12 @@
 .congrats-section {
 	max-width: 500px;
-	background: var(--bg-color);
-	padding: 20px 40px 70px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 30px;
 	border-radius: 14px;
+	padding: 25px 40px 70px;
+	background: var(--bg-color);
 }
 
 .congrats-image {
@@ -26,7 +27,8 @@
 }
 
 .congrats-section .play-again-btn {
-	width: 380px;
+	max-width: 400px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -1,3 +1,8 @@
+.quiz-section {
+	max-width: 768px;
+	margin: 50px;
+}
+
 .quiz-section .head {
 	width: 100%;
 	display: flex;
@@ -30,21 +35,23 @@
 }
 
 .questions {
-	width: 768px;
-	background: var(--bg-color);
-	padding: 50px 60px 70px;
+	max-width: 768px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
 	border-radius: 14px;
+	padding: 50px 60px 70px;
+	background: var(--bg-color);
 }
 
 .question-list {
 	padding: 0;
-	width: max-content;
+	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 14px;
 }
 

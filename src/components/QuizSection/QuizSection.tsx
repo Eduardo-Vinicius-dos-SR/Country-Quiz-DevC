@@ -1,8 +1,10 @@
 import "./QuizSection.css";
+import "./QuizSection.responsive.css";
 import type { RefObject } from "react";
 
 interface QuizSectionProps {
 	score: number;
+	maxScore: number;
 	actualQuestion: number;
 	question: string;
 	questions: {
@@ -19,6 +21,7 @@ interface QuizSectionProps {
 
 export const QuizSection = ({
 	score,
+	maxScore,
 	actualQuestion,
 	question,
 	questions,
@@ -27,18 +30,22 @@ export const QuizSection = ({
 	CheckIcon,
 	CloseIcon,
 }: QuizSectionProps) => {
+	const maxQuestions = maxScore;
+
 	return (
 		<section className="quiz-section">
 			<div className="head">
 				<h2>Country Quiz</h2>
 				<div className="score">
-					<p>🏆&nbsp; {score}/10 Points</p>
+					<p>
+						🏆&nbsp; {score}/{maxScore} Points
+					</p>
 				</div>
 			</div>
 
 			<div className="questions">
 				<ol className="question-list">
-					{[...Array(10)].map((_, i) => (
+					{[...Array(maxQuestions)].map((_, i) => (
 						<li key={i} className={i <= actualQuestion ? "answered" : ""}>
 							<p>{i + 1}</p>
 						</li>

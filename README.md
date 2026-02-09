@@ -6,8 +6,8 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
-      Demo | Live Site
+    <a href="https://country-quiz-theta.vercel.app">
+      Live Site
     </a>
     <span> | </span>
     <a href="{https://your-url-to-the-solution}">

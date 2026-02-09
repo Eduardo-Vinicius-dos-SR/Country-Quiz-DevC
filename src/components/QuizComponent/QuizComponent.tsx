@@ -4,11 +4,15 @@ import CloseIcon from "../../assets/resources/Close_round_fill.svg";
 import url from "../../json/quiz.json";
 import { QuizSection } from "../QuizSection/QuizSection";
 import { CongratsComponent } from "../CongratsComponent/CongratsComponent";
+import LoadingIcon from "../../assets/resources/congrats.png";
+import "./LoadingComponent.css";
 
 export const QuizComponent = () => {
 	const questions = url.questions;
 	const answersRef = useRef<HTMLDivElement>(null);
+
 	const [quizCompleted, setQuizCompleted] = useState<boolean>(false);
+	const [isLoading, setIsLoading] = useState<boolean>(true);
 
 	const [actualQuestion, setActualQuestion] = useState(0);
 	const [question, setQuestion] = useState(questions[0].question);
@@ -40,9 +44,7 @@ export const QuizComponent = () => {
 			(button as HTMLButtonElement).disabled = true;
 			setTimeout(() => {
 				if (button.textContent === correctQuestion) {
-					console.log("foi");
 					button.classList.add("correct");
-					console.log("2");
 				}
 			}, 1500);
 		});
@@ -69,11 +71,17 @@ export const QuizComponent = () => {
 		}, 4000);
 	}
 
+	setTimeout(() => {
+		setIsLoading(false);
+	}, 5000);
 	return (
 		<>
-			{!quizCompleted ? (
+			{isLoading ? (
+				<img src={LoadingIcon} alt="Loading Icon" className="loading-icon" />
+			) : !quizCompleted ? (
 				<QuizSection
 					score={score}
+					maxScore={questions.length}
 					actualQuestion={actualQuestion}
 					question={question}
 					questions={questions}
@@ -83,7 +91,7 @@ export const QuizComponent = () => {
 					CloseIcon={CloseIcon}
 				/>
 			) : (
-				<CongratsComponent score={score} restartFunction={restart} />
+				<CongratsComponent score={score} maxScore={questions.length} restartFunction={restart} />
 			)}
 		</>
 	);

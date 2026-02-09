@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+	.congrats-section {
+		max-width: 350px;
+		padding: 20px 50px 50px;
+	}
+
+	.congrats-image {
+		max-width: 350px;
+	}
+
+	.congrats-section h2 {
+		font-size: 26px;
+	}
+
+	.congrats-section p {
+		font-size: 20px;
+		margin: 4px 0 50px;
+	}
+
+	.congrats-section .play-again-btn {
+		max-width: 300px;
+		padding: 20px;
+	}
+
+	.congrats-section .play-again-btn p {
+		margin: 0;
+		font-size: 20px;
+	}
+}
+@media (max-width: 425px) {
+	.congrats-section {
+		padding: 20px 15px 30px;
+		margin: 15px;
+	}
+
+	.congrats-section h2 {
+		font-size: 23px;
+	}
+
+	.congrats-section p {
+		font-size: 16px;
+		margin: 4px 0 30px;
+	}
+
+	.congrats-section .play-again-btn {
+		padding: 15px;
+	}
+
+	.congrats-section .play-again-btn p {
+		font-size: 18px;
+	}
+}
