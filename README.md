@@ -10,11 +10,11 @@
       Live Site
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="{https://your-url-to-the-solution}" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenge/country-quizz">
+    <a href="https://devchallenges.io/challenge/country-quizz" target="_blank">
       Challenge
     </a>
   </h3>
