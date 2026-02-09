@@ -1,0 +1,67 @@
+{
+	"note": "I couldn't fetch the questions from the provided URL, and I also couldn't get them through the API website, so I created my own questions.",
+
+	"questions": [
+		{
+			"id": 1,
+			"question": "Which architect designed the main government buildings of Brasília?",
+			"options": ["Le Corbusier", "Oscar Niemeyer", "Frank Lloyd Wright", "Lúcio Costa"],
+			"correctAnswer": "Oscar Niemeyer"
+		},
+
+		{
+			"id": 2,
+			"question": "Which country has the largest territory in the world?",
+			"options": ["Canada", "United States", "China", "Russia"],
+			"correctAnswer": "Russia"
+		},
+		{
+			"id": 3,
+			"question": "On which continent is Egypt located?",
+			"options": ["Asia", "Europe", "Africa", "America"],
+			"correctAnswer": "Africa"
+		},
+		{
+			"id": 4,
+			"question": "What is the official currency of Japan?",
+			"options": ["Won", "Yuan", "Yen", "Dollar"],
+			"correctAnswer": "Yen"
+		},
+		{
+			"id": 5,
+			"question": "Which country is known as the Land of the Rising Sun?",
+			"options": ["China", "South Korea", "Japan", "Thailand"],
+			"correctAnswer": "Japan"
+		},
+		{
+			"id": 6,
+			"question": "Which of these countries is NOT part of the European Union?",
+			"options": ["Germany", "France", "Norway", "Italy"],
+			"correctAnswer": "Norway"
+		},
+		{
+			"id": 7,
+			"question": "Which country has the largest population in the world?",
+			"options": ["India", "United States", "China", "Russia"],
+			"correctAnswer": "India"
+		},
+		{
+			"id": 8,
+			"question": "What is the official language of Argentina?",
+			"options": ["Portuguese", "Spanish", "English", "French"],
+			"correctAnswer": "Spanish"
+		},
+		{
+			"id": 9,
+			"question": "Which country has a flag with red and white horizontal stripes and blue canton with stars?",
+			"options": ["Japan", "United States", "Peru", "Mexico"],
+			"correctAnswer": "United States"
+		},
+		{
+			"id": 10,
+			"question": "Which sea lies to the east of the Italian peninsula?",
+			"options": ["Tyrrhenian Sea", "Adriatic Sea", "Ionian Sea", "Ligurian Sea"],
+			"correctAnswer": "Adriatic Sea"
+		}
+	]
+}

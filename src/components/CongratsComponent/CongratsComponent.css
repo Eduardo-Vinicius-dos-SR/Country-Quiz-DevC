@@ -1,0 +1,54 @@
+.congrats-section {
+	max-width: 500px;
+	background: var(--bg-color);
+	padding: 20px 40px 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 14px;
+}
+
+.congrats-image {
+	max-width: 500px;
+	width: 100%;
+}
+
+.congrats-section h2 {
+	font-size: 38px;
+	font-weight: 500;
+	margin: 15px;
+}
+
+.congrats-section p {
+	font-size: 24px;
+	font-weight: 500;
+	margin: 5px 0 70px;
+}
+
+.congrats-section .play-again-btn {
+	width: 380px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--gradient-primary);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.3s ease-in-out;
+	padding: 25px;
+	cursor: pointer;
+}
+
+.congrats-section .play-again-btn:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.congrats-section .play-again-btn:active {
+	transform: translateY(2px);
+}
+
+.congrats-section .play-again-btn p {
+	margin: 0;
+	font-size: 28px;
+}
