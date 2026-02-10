@@ -105,7 +105,8 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 12px;
 	position: relative;
-	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 	transition: box-shadow 0.3s ease-in-out;
 	cursor: pointer;
 }

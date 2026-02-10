@@ -32,7 +32,8 @@ body {
 	margin: 0;
 	display: flex;
 	place-items: center;
-	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 	background-image: url("./assets/resources/bg.jpg");
 	background-size: cover;
 }

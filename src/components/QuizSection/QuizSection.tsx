@@ -15,6 +15,7 @@ interface QuizSectionProps {
 	}[];
 	handleAnswer: (e: React.MouseEvent<HTMLButtonElement>, answer: string) => Promise<void>;
 	answersRef: RefObject<HTMLDivElement>;
+	// scoreRef={scoreRef as React.RefObject<HTMLDivElement>}
 	CheckIcon: string;
 	CloseIcon: string;
 }
@@ -33,7 +34,7 @@ export const QuizSection = ({
 	const maxQuestions = maxScore;
 
 	return (
-		<section className="quiz-section">
+		<section className="quiz-section quiz-enter">
 			<div className="head">
 				<h2>Country Quiz</h2>
 				<div className="score">

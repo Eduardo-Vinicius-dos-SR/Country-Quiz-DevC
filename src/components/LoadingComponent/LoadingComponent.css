@@ -1,0 +1,14 @@
+.loading-icon {
+	max-width: 350px;
+	width: 100%;
+	animation:
+		float 3s ease-in-out infinite,
+		pulse 2s ease-in-out infinite;
+	filter: drop-shadow(0 10px 30px rgba(255, 200, 100, 0.3));
+}
+
+@media (max-width: 425px) {
+	.loading-icon {
+		max-width: 250px;
+	}
+}

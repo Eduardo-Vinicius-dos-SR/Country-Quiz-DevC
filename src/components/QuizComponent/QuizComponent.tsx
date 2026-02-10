@@ -4,8 +4,8 @@ import CloseIcon from "../../assets/resources/Close_round_fill.svg";
 import url from "../../json/quiz.json";
 import { QuizSection } from "../QuizSection/QuizSection";
 import { CongratsComponent } from "../CongratsComponent/CongratsComponent";
-import LoadingIcon from "../../assets/resources/congrats.png";
-import "./LoadingComponent.css";
+import { LoadingComponent } from "../LoadingComponent/LoadingComponent";
+import "./animations.css";
 
 export const QuizComponent = () => {
 	const questions = url.questions;
@@ -29,12 +29,19 @@ export const QuizComponent = () => {
 	function resetButtonClasses() {
 		const buttons = answersRef.current?.querySelectorAll(".answer-button");
 		buttons?.forEach((button) => {
-			button.classList.remove("selected", "correct", "wrong");
+			button.classList.remove(
+				"selected",
+				"correct",
+				"wrong",
+				"answer-selected",
+				"answer-correct-reveal",
+				"answer-wrong-reveal",
+			);
 		});
 	}
 
 	async function handleAnswer(e: React.MouseEvent<HTMLButtonElement>, answer: string) {
-		e.currentTarget.classList.add("selected");
+		e.currentTarget.classList.add("selected", "answer-selected");
 
 		const correctQuestion = questions[actualQuestion].correctAnswer;
 
@@ -44,16 +51,16 @@ export const QuizComponent = () => {
 			(button as HTMLButtonElement).disabled = true;
 			setTimeout(() => {
 				if (button.textContent === correctQuestion) {
-					button.classList.add("correct");
+					button.classList.add("correct", "answer-correct-reveal");
 				}
 			}, 1500);
 		});
 
 		if (answer === correctQuestion) {
-			e.currentTarget.classList.add("correct");
+			e.currentTarget.classList.add("correct", "answer-correct-reveal");
 			setScore(score + 1);
 		} else {
-			e.currentTarget.classList.add("wrong");
+			e.currentTarget.classList.add("wrong", "answer-wrong-reveal");
 		}
 
 		setTimeout(() => {
@@ -74,10 +81,11 @@ export const QuizComponent = () => {
 	setTimeout(() => {
 		setIsLoading(false);
 	}, 5000);
+
 	return (
 		<>
 			{isLoading ? (
-				<img src={LoadingIcon} alt="Loading Icon" className="loading-icon" />
+				<LoadingComponent />
 			) : !quizCompleted ? (
 				<QuizSection
 					score={score}

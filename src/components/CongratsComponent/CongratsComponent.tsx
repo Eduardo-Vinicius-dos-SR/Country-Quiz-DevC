@@ -8,14 +8,16 @@ interface CongratsComponentProps {
 	restartFunction: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-export const CongratsComponent = ({ score,maxScore, restartFunction }: CongratsComponentProps) => {
+export const CongratsComponent = ({ score, maxScore, restartFunction }: CongratsComponentProps) => {
 	return (
-		<section className="congrats-section">
+		<section className="congrats-section celebration">
 			<img src={congratsImage} alt="Congrats Image" className="congrats-image" />
 
 			<h2>Congrats! You completed the quiz.</h2>
 
-			<p>You answer {score}/{maxScore} correctly</p>
+			<p>
+				You answer {score}/{maxScore} correctly
+			</p>
 
 			<button className="play-again-btn" onClick={restartFunction}>
 				<p>Play again</p>
