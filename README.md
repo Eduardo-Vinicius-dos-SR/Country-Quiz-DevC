@@ -10,7 +10,7 @@
       Live Site
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}" target="_blank">
+    <a href="https://devchallenges.io/solution/64287" target="_blank">
       Solution
     </a>
     <span> | </span>
