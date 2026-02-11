@@ -24,9 +24,9 @@
 
 ## Description
 
-<P align="center">The project is a quiz application featuring country-related questions, answer validation, and a scoring system based on correct responses. At the end of the quiz, the final score is displayed, with an option to restart and play again.
+<p>The project is a quiz application featuring country-related questions, answer validation, and a scoring system based on correct responses. At the end of the quiz, the final score is displayed, with an option to restart and play again.</p>
 
-The project was developed using React and TypeScript and relies on a local question database, as the questions could not be retrieved from the provided API. It also includes animations for the quiz start, answer selection, and visual feedback indicating whether the selected answer is correct or incorrect.</P>
+<p>The project was developed using React and TypeScript and relies on a local question database, as the questions could not be retrieved from the provided API. It also includes animations for the quiz start, answer selection, and visual feedback indicating whether the selected answer is correct or incorrect.</p>
 
 
 <!-- TABLE OF CONTENTS -->
